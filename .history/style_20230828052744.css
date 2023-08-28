@@ -1,0 +1,133 @@
+
+:root {
+  --primary-color: #FEA200;
+  --bg-color: #fff;
+  --text-color: #000;
+  --light-text-color: #a5a5a5;
+  --body-bg-color: #F2A88D;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+.container {
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  margin: 0 5px;
+}
+.container .heading {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.container .receive
+{
+  font-size: 20px;
+}
+.container .options select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-text-color);
+  border-radius: 5px;
+  outline: none;
+}
+.container .options div:not(:last-child) select {
+  margin-bottom: 20px;
+}
+#language
+{
+  font-weight: 800;
+}
+.container .options p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--light-text-color);
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 60px;
+  padding: 20px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.btn ion-icon {
+  font-size: 30px;
+}
+.btn:disabled {
+  background-color: var(--light-text-color);
+  cursor: not-allowed;
+}
+
+.container .record img {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.container .record.recording img {
+  display: block;
+}
+.container .record.recording ion-icon {
+  display: none;
+}
+.container .result {
+  width: 100%;
+  min-height: 200px;
+  padding: 10px;
+  border: 1px solid var(--light-text-color);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.container .result p {
+  display: inline;
+  margin-left: 3px;
+  color: var(--light-text-color);
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.history
+{
+  /* display: none; */
+}
+.icon-cover
+{
+  display: flex;
+  float: right;
+}
+.mini-btn
+{
+  color: red;
+  margin: 0 5px;
+  font-size: 18px;
+  outline: none;
+}

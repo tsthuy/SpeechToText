@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <title>Speech to Text</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="heading">Speech to Text</p>
+      <div class="options">
+        <div>
+          <p>Language</p>
+          <select name="input-language" id="language"></select>
+        </div>
+      </div>
+      <button class="btn record">
+        <div class="icon">
+          <ion-icon name="mic-outline"></ion-icon>
+          <img src="record.svg" alt="" />
+        </div>
+        <p>Start Listening</p>
+      </button>
+      <p class="heading receive">Result :</p>
+      <div
+        class="result"
+        spellcheck="false"
+        placeholder="Text will be shown here"
+      >
+        <p class="interim"></p>
+      </div>
+      <div class="buttons">
+        <button class="btn clear">
+          <ion-icon name="trash-outline"></ion-icon>
+          <p>Clear</p>
+        </button>
+        <button class="btn download" disabled>
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          <p>Download</p>
+        </button>
+      </div>
+      <div class="buttons">
+        <button class="btn store" id="viewSavedTexts">
+          <ion-icon name="reader-outline"></ion-icon>
+          <p>History</p>
+        </button>
+        
+      </div>
+    </div>
+    <div class="container history" id="history">
+      <p class="heading">History</p>
+      <div id="savedTexts"></div>
+    </div>
+    <!-- ion-icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- languages-->
+    <script src="languages.js"></script>
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
